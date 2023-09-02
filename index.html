@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Centered Text</title>
+    <title>Background Image Example</title>
     <style>
         body {
+            background-image: url('dylan.jpg'); /* Replace 'dylan.jpg' with the actual filename and extension of your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
         }
 
         #centered-text {
             font-size: 48px;
             font-weight: bold;
+            color: white; /* You may want to set a text color that contrasts with your background image */
         }
     </style>
 </head>
