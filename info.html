@@ -23,11 +23,18 @@
             border: none;
             color: #333333; /* Default text color */
             font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
-            font-size: 100px; /* Add your desired font size */
+            font-size: 30px; /* Add your desired font size */
             font-weight: bold;
             text-decoration: none;
             transition: color 0.3s ease; /* Smooth text color transition on hover */
             cursor: pointer;
+        }
+        
+        .top-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
         }
 
         .text-button:hover {
@@ -37,10 +44,12 @@
     </style>
 </head>
 <body>
-    <span class="text-button">Steam</span>
-    <span class="text-button">Twitter</span>
-    <span class="text-button">Instagram</span>
-    <span class="text-button">Discord</span>
-    <span class="text-button">LinkedIn</span>
+    <div class="top-buttons">
+        <span class="text-button">Steam</span>
+        <span class="text-button">Twitter</span>
+        <span class="text-button">Instagram</span>
+        <span class="text-button">Discord</span>
+        <span class="text-button">LinkedIn</span>
+    </div>
 </body>
 </html>
