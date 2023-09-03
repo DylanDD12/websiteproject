@@ -55,10 +55,12 @@
         button.addEventListener("click", function () {
             button.classList.add("clicked");
 
-            setTimeout(function () {
-                // Redirect to a different page after the animation (e.g., "newpage.html")
-                window.location.href = "info.html";
-            }, 1000); // Wait for 1 second (the same duration as the animation)
+             setTimeout(function () {
+                // Redirect to a different page after a slight delay
+                setTimeout(function () {
+                    window.location.href = "newpage.html";
+                }, 500); // Wait for 0.5 seconds
+            }, 500); // Wait for 0.5 seconds before starting the animation
         });
     });
 </script>
