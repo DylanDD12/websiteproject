@@ -17,6 +17,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
+            overflow: hidden; /* Hide overflow to prevent scrolling */
         }
         .text-button {
             background: transparent;
@@ -27,7 +28,6 @@
             font-size: 30px; /* Add your desired font size */
             font-weight: bold;
             text-decoration: none;
-            transition: color 0.3s ease; /* Smooth text color transition on hover */
             cursor: pointer;
         }
         
@@ -35,12 +35,13 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
+            margin-left: 10%; /* Adjust margin for the first button */
+            margin-right: 10%; /* Adjust margin for the last button */
         }
 
         .text-button:hover {
-            color: #ffffff; /* Remove underline on hover */
+            color: #ffffff;
         }
-        
     </style>
 </head>
 <body>
