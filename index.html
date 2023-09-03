@@ -34,8 +34,30 @@
         .centered-button:hover {
             color: #ffffff; /* Text color on hover */
         }
-        
+
+        .centered-button.clicked {
+            animation: fadeOut 1s ease; /* Add your animation properties */
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }        
         </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var button = document.querySelector(".centered-button");
+
+        button.addEventListener("click", function () {
+            button.classList.add("clicked");
+        });
+    });
+</script>
+    
 </head>
 <body>
     <button class="centered-button">D&nbsp;Y&nbsp;L&nbsp;A&nbsp;N&nbsp;&nbsp;D&nbsp;I&nbsp;C&nbsp;K&nbsp;I&nbsp;N&nbsp;S&nbsp;O&nbsp;N</button>
