@@ -14,9 +14,38 @@
             height: 100vh;
             margin: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-        }   
-      </style>
+            justify-content: flex-start;
+        }
+
+        .top-bar {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background for buttons */
+            padding: 10px;
+        }
+
+        .button {
+            background-color: #007bff; /* Blue background color for buttons */
+            color: #fff; /* White text color for buttons */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Darker blue color on hover */
+        }
+    </style>
 </head>
+<body>
+    <div class="top-bar">
+        <button class="button">Button 1</button>
+        <button class="button">Button 2</button>
+        <button class="button">Button 3</button>
+    </div>
+</body>
 </html>
