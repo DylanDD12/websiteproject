@@ -18,34 +18,24 @@
             align-items: center;
             justify-content: flex-start;
         }
-
-        .top-bar {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            background-color: #1111ff; /* Semi-transparent white background for buttons */
-            padding: 10px;
-        }
-
-        .button {
-            background-color: #007bff; /* Blue background color for buttons */
-            color: #333332; /* White text color for buttons */
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
+        .text-button {
+            color: #333332; /* Blue text color for the button */
+            text-decoration: underline; /* Add underline for the text */
             cursor: pointer;
+            font-size: 18px; /* Adjust the font size as needed */
         }
 
-        .button:hover {
-            background-color: #ffffff; /* Darker blue color on hover */
+        .text-button:hover {
+            text-decoration: none; /* Remove underline on hover */
         }
+        
     </style>
 </head>
 <body>
-    <div class="top-bar">
-        <button class="button">Button 1</button>
-        <button class="button">Button 2</button>
-        <button class="button">Button 3</button>
-    </div>
+    <span class="text-button">Steam</span>
+    <span class="text-button">Twitter</span>
+    <span class="text-button">Instagram</span>
+    <span class="text-button">Discord</span>
+    <span class="text-button">LinkedIn</span>
 </body>
 </html>
