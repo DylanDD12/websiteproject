@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+c<!DOCTYPE html>
 <html>
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +14,64 @@
             height: 100vh;
             margin: 0;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            justify-content: flex-start;
-            overflow: hidden; /* Hide overflow to prevent scrolling */
         }
-    </style>
+
+        .centered-button {
+            display: inline-block;
+            background: transparent;
+            border: none;
+            color: #ffffff; /* Default text color */
+            font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
+            font-size: 50px; /* Add your desired font size */
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth text color transition on hover */
+            cursor: pointer;
+        }
+
+        .centered-button:hover {
+            color: #333332; /* Text color on hover */
+        }
+
+        .centered-image {
+            width: 100px;
+            height: 100px;
+        }
+
+        .centered-container {
+            display: flex;
+            flex-direction: column; /* Stack image and button vertically */
+            align-items: center; /* Center horizontally */
+        }
+        
+        </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var button = document.querySelector(".centered-button");
+
+        button.addEventListener("click", function () {
+            button.classList.add("clicked");
+
+                    // Your JavaScript code here
+        function openInNewTab(url) {
+            window.open(url, '_blank');
+        }
+
+            setTimeout(function () {
+                var linkUrl = 'https://steamcommunity.com/profiles/76561198176004889';
+                openInNewTab(linkUrl);
+            }, 0);       
+        });
+    });
+</script>
+    
 </head>
 <body>
+    <div class="centered-container">
+        <a> <img src="../profiles/steam.png" class="centered-image" alt="Steam pfp."> </a>
+        <button class="centered-button">@HoboBean</button>
+    </div>
 </body>
 </html>

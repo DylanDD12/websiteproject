@@ -11,11 +11,11 @@ c<!DOCTYPE html>
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 100vh;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
         }
 
         .centered-button {
@@ -24,11 +24,19 @@ c<!DOCTYPE html>
             border: none;
             color: #333332; /* Default text color */
             font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
-            font-size: 100px; /* Add your desired font size */
+            font-size: 4.5vw; /* Add your desired font size */
             font-weight: bold;
             text-decoration: none;
             transition: color 0.3s ease; /* Smooth text color transition on hover */
             cursor: pointer;
+            width: 100%; /* Make the button fill the container's width */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .centered-button:hover {
@@ -65,6 +73,8 @@ c<!DOCTYPE html>
     
 </head>
 <body>
+    <div class = "container">
     <button class="centered-button">D&nbsp;Y&nbsp;L&nbsp;A&nbsp;N&nbsp;&nbsp;D&nbsp;I&nbsp;C&nbsp;K&nbsp;I&nbsp;N&nbsp;S&nbsp;O&nbsp;N</button>
+    </div>
 </body>
 </html>
