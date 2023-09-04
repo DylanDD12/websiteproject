@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+c<!DOCTYPE html>
 <html>
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
         }
         .icon-button {
             background: transparent;
-            margin: 20px;
+            margin: 27px;
             border: none;
             color: #333333; /* Default text color */
             font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
@@ -36,9 +36,8 @@
             justify-content: space-between;
             align-items: center; /* Center vertically */
             position: fixed; /* Position buttons relative to the viewport */
-            bottom: 50%; /* Adjust vertical position as needed */
             width: 80%;
-            margin-left: 20%; /* Adjust margin for the first button */
+            margin-left: 35%; /* Adjust margin for the first button */
             margin-right: 20%; /* Adjust margin for the last button */
             transition: color 0.3s ease; /* Smooth text color transition on hover */
         }
@@ -51,10 +50,68 @@
             width: 50px; /* Adjust the width as needed */
             height: 50px; /* Adjust the height as needed */
         }
+
+        .sidebar-icon-container {
+            /* Adjust the position of the sidebar icon container as needed */
+            margin-left: 20px; /* Example: Move it 10px to the left */
+            margin-top: 10px;
+            margin-right: auto; /* Reset right margin */
+        }
+
+        .sidebar {
+            width: 0;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #000000; /* Adjust the background color as needed */
+            opacity: 50%;
+            overflow: hidden;
+            white-space: pre;
+            transition: 0.5s;
+            padding-top: 60px; /* Space for the sidebar icon */
+            z-index: 1;
+        }
+
+        .sidebar.active {
+            width: 350px; /* Adjust the width of the sidebar */
+        }
+
+        .sidebar a {
+            font-size: 30px;
+            font-family: 'Lexend Zetta', sans-serif;
+            color: #ffffff; /* White text color */
+            margin: 30px;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px;
+            text-transform: uppercase;
+            line-height: 3;
+            display: inline-block;
+            border: none;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth text color transition on hover */
+            cursor: pointer;
+        }
+
     </style>
 
 </head>
-<body>   
+<body>  
+    <div class="sidebar-icon-container">
+        <a class="icon-button" onmouseenter="toggleSidebar()">
+          <img src="icons/sidebar.gif" alt="More" class="icon-image">
+        </a>
+    </div>
+
+    <div class="sidebar" id="sidebar" onmouseleave="toggleSidebar()">
+        <!-- Add your sidebar content here -->
+        <a href="sidebar/about.html">About</a>
+        <a href="sidebar/gallery.html">Photos</a>
+        <a href="sidebar/contact.html">Contact</a>
+    </div>
+
     <div class="mid-buttons">
         <a href="data/steam.html" class="icon-button"><img src="icons/steam-icon.gif" alt="Steam" class="icon-image"></a>
         <a href="data/twitter.html" class="icon-button"><img src="icons/twitter-icon.gif" alt="Twitter" class="icon-image"></a>
@@ -66,6 +123,12 @@
 </body>
 </html>
         
+<script>
+  function toggleSidebar() {
+    var sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("active");
+  }
+</script>
         
         
         
