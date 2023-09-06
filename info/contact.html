@@ -42,16 +42,25 @@
         action="https://formspree.io/f/mzblgydn"
         method="POST"
         >
-        <label>
-            Your email:
-            <input type="email" name="email">
-        </label>
-        <label>
-            Your message:
-            <textarea name="message"></textarea>
-        </label>
-        <!-- your other form fields go here -->
-        <button type="submit">Send</button>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="jackbarrs@gmail.com">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="unitedkingdom">UK</option>
+                <option value="row">Rest of world</option>
+            </select>
+        
+            <label for="subject">Message</label>
+            <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">       
         </form>
     </div>
 
