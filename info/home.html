@@ -1,6 +1,7 @@
 c<!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
@@ -105,9 +106,40 @@ c<!DOCTYPE html>
             filter: opacity(0.5);
         }
 
+        @media screen and (max-width: 768px) {
+            /* Add mobile-specific styles here */
+            body {
+                background-size: contain;
+            }
+            
+            .mid-buttons {
+                /* Adjust styles for mobile screen */
+                margin-left: 0;
+                margin-right: 0;
+                justify-content: space-around;
+            }
+            
+            .icon-button {
+                /* Adjust styles for mobile screen */
+                font-size: 20px;
+            }
+            
+            .sidebar {
+                /* Adjust styles for mobile screen */
+                width: 100%;
+                padding-top: 0;
+            }
+            
+            .sidebar a {
+                /* Adjust styles for mobile screen */
+                font-size: 24px;
+                margin: 10px;
+                line-height: 2;
+            }
+        }
     </style>
-
 </head>
+
 <body>  
 
     <div class="mid-buttons">
