@@ -5,121 +5,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pagestyle.css">
     <title>Home</title>
-    <style>
-        body {
-            background-image: url('../dylan.jpg'); 
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: flex-start;
-             /* Hide overflow to prevent scrolling */
-        }
-        .icon-button {
-            background: transparent;
-            margin: 1%;
-            border: none;
-            color: #333333; /* Default text color */
-            font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
-            font-size: 3%; /* Add your desired font size */
-            font-weight: bold;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .right-buttons {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap:nowrap;
-            position: fixed; /* Position buttons relative to the viewport */
-            margin-right: 2%; /* Adjust margin for the last button (5% from the right edge) */
-            margin-top: 0.8%;
-            transition: color 0.3s ease; /* Smooth text color transition on hover */
-            max-width: 100%;
-        }
-
-        .icon-button:hover img{
-            filter: opacity(0.5);
-        }
-
-        .icon-image {
-            width: 60px; /* Adjust the width as needed (10% of the screen width) */
-            height: 60px; /* Adjust the height as needed */
-        }
-
-        
-        .icon-sidebar {
-            background: transparent;
-            margin: 1%;
-            border: none;
-            color: #333333; /* Default text color */
-            font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
-            font-size: 3%; /* Add your desired font size */
-            font-weight: bold;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .sidebar-icon-container {
-            /* Adjust the position of the sidebar icon container as needed */
-            margin-left: 1%; /* Example: Move it 10px to the left */
-            margin-top: 1%;
-            margin-right: auto; /* Reset right margin */
-            z-index: 2; /* Make sure the icon is above the sidebar */
-        }
-
-        .sidebar {
-            width: 0;
-            height: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            overflow: hidden;
-            white-space: pre;
-            transition: 0.5s;
-            padding-top: 6%; /* Space for the sidebar icon */
-            z-index: 1;
-            background-image: url(sidebar.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin: 0;
-        }
-
-        .sidebar.active {
-            width: 25%; /* Adjust the width of the sidebar */
-        }
-
-        .sidebar a {
-            font-size: 200%;
-            font-family: 'Lexend Zetta', sans-serif;
-            color: #1c1c1c; /* White text color */
-            margin: 1%;
-            align-items: center;
-            margin-top: 7.7%;
-            margin-right: 2%;
-            text-transform: uppercase;
-            display: inline-block;
-            border: none;
-            font-weight: bold;
-            text-decoration: none;
-            transition: color 0.3s ease; /* Smooth text color transition on hover */
-            cursor: pointer;
-        }
-
-        .sidebar a:hover{
-            filter: opacity(0.5);
-        }
-
-    </style>
 </head>
 
 <body>  
+    <script src="sidebarscript.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <div class="right-buttons">
@@ -144,17 +36,8 @@
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
     </div>
-
- 
 </body>
-</html>
-        
-<script>
-  function toggleSidebar() {
-    var sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("active");
-  }
-</script>  
+</html> 
         
         
     
