@@ -1,6 +1,7 @@
-c<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
@@ -15,29 +16,29 @@ c<!DOCTYPE html>
             margin: 0;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-end;
             justify-content: flex-start;
-            overflow: hidden; /* Hide overflow to prevent scrolling */
+             /* Hide overflow to prevent scrolling */
         }
         .icon-button {
             background: transparent;
-            margin: 10px;
+            margin: 1%;
             border: none;
             color: #333333; /* Default text color */
             font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
-            font-size: 30px; /* Add your desired font size */
+            font-size: 3%; /* Add your desired font size */
             font-weight: bold;
             text-decoration: none;
             cursor: pointer;
         }
-        
-        .mid-buttons {
+
+        .right-buttons {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
+            flex-wrap:nowrap;
             position: fixed; /* Position buttons relative to the viewport */
-            margin-left: 85%; /* Adjust margin for the first button (85% from the left edge) */
-            margin-right: 5%; /* Adjust margin for the last button (5% from the right edge) */
-            margin-top: 10px;
+            margin-right: 2%; /* Adjust margin for the last button (5% from the right edge) */
+            margin-top: 0.8%;
             transition: color 0.3s ease; /* Smooth text color transition on hover */
             max-width: 100%;
         }
@@ -51,10 +52,23 @@ c<!DOCTYPE html>
             height: 60px; /* Adjust the height as needed */
         }
 
+        
+        .icon-sidebar {
+            background: transparent;
+            margin: 1%;
+            border: none;
+            color: #333333; /* Default text color */
+            font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
+            font-size: 3%; /* Add your desired font size */
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
         .sidebar-icon-container {
             /* Adjust the position of the sidebar icon container as needed */
-            margin-left: 20px; /* Example: Move it 10px to the left */
-            margin-top: 10px;
+            margin-left: 2%; /* Example: Move it 10px to the left */
+            margin-top: 1%;
             margin-right: auto; /* Reset right margin */
             z-index: 2; /* Make sure the icon is above the sidebar */
         }
@@ -68,7 +82,7 @@ c<!DOCTYPE html>
             overflow: hidden;
             white-space: pre;
             transition: 0.5s;
-            padding-top: 60px; /* Space for the sidebar icon */
+            padding-top: 6%; /* Space for the sidebar icon */
             z-index: 1;
             background-image: url(sidebar.png);
             background-size: cover;
@@ -78,21 +92,21 @@ c<!DOCTYPE html>
         }
 
         .sidebar.active {
-            width: 400px; /* Adjust the width of the sidebar */
+            width: 30%; /* Adjust the width of the sidebar */
         }
 
         .sidebar a {
-            font-size: 40px;
+            font-size: 300%;
             font-family: 'Lexend Zetta', sans-serif;
             color: #1c1c1c; /* White text color */
-            margin: 20px;
+            margin: 2%;
             align-items: center;
-            margin-top: 75px;
-            margin-left: 10px;
-            margin-right: 20px;
-            padding: 10px;
+            margin-top: 7.7%;
+            margin-left: 1%;
+            margin-right: 2%;
+            padding: 1%;
             text-transform: uppercase;
-            line-height: 4;
+            line-height: 3;
             display: inline-block;
             border: none;
             font-weight: bold;
@@ -104,13 +118,25 @@ c<!DOCTYPE html>
         .sidebar a:hover{
             filter: opacity(0.5);
         }
-    </style>
 
+    </style>
 </head>
+
 <body>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <div class="right-buttons">
+        <a href="steam.html" class="icon-button"><img src="../icons/steam-icon.gif" alt="Steam" class="icon-image"></a>
+        <a href="twitter.html" class="icon-button"><img src="../icons/twitter-icon.gif" alt="Twitter" class="icon-image"></a>
+        <a href="instagram.html" class="icon-button"><img src="../icons/instagram-icon.gif" alt="Instagram" class="icon-image"></a>
+        <a href="discord.html" class="icon-button"><img src="../icons/discord-icon.gif" alt="Discord" class="icon-image"></a>
+        <a href="linkedin.html" class="icon-button"><img src="../icons/linkedin-icon.gif" alt="LinkedIn" class="icon-image"></a>
+        <a href="git.html" class="icon-button"><img src="../icons/git-icon.gif" alt="LinkedIn" class="icon-image"></a>
+    </div>  
+
     <div class="sidebar-icon-container">
-        <a class="icon-button" onmouseenter="toggleSidebar()">
-          <img src="../icons/sidebar.gif" alt="More" class="icon-image">
+        <a class="icon-sidebar" onmouseenter="toggleSidebar()">
+        <img src="../icons/sidebar.gif" class="icon-image">
         </a>
     </div>
 
@@ -122,14 +148,7 @@ c<!DOCTYPE html>
         <a href="contact.html">Contact</a>
     </div>
 
-    <div class="mid-buttons">
-        <a href="steam.html" class="icon-button"><img src="../icons/steam-icon.gif" alt="Steam" class="icon-image"></a>
-        <a href="twitter.html" class="icon-button"><img src="../icons/twitter-icon.gif" alt="Twitter" class="icon-image"></a>
-        <a href="instagram.html" class="icon-button"><img src="../icons/instagram-icon.gif" alt="Instagram" class="icon-image"></a>
-        <a href="discord.html" class="icon-button"><img src="../icons/discord-icon.gif" alt="Discord" class="icon-image"></a>
-        <a href="linkedin.html" class="icon-button"><img src="../icons/linkedin-icon.gif" alt="LinkedIn" class="icon-image"></a>
-        <a href="git.html" class="icon-button"><img src="../icons/git-icon.gif" alt="LinkedIn" class="icon-image"></a>
-    </div>   
+ 
 </body>
 </html>
         
@@ -138,4 +157,4 @@ c<!DOCTYPE html>
     var sidebar = document.getElementById("sidebar");
     sidebar.classList.toggle("active");
   }
-</script>
+</script>  
