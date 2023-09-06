@@ -33,13 +33,13 @@ c<!DOCTYPE html>
         
         .mid-buttons {
             display: flex;
-            justify-content: space-between;
-            align-items: center; /* Center vertically */
+            justify-content: center;
             position: fixed; /* Position buttons relative to the viewport */
-            margin-left: 90%; /* Adjust margin for the first button */
-            margin-right: 7.5%; /* Adjust margin for the last button */
+            margin-left: 85%; /* Adjust margin for the first button (85% from the left edge) */
+            margin-right: 5%; /* Adjust margin for the last button (5% from the right edge) */
             margin-top: 10px;
             transition: color 0.3s ease; /* Smooth text color transition on hover */
+            max-width: 100%;
         }
 
         .icon-button:hover img{
@@ -47,8 +47,8 @@ c<!DOCTYPE html>
         }
 
         .icon-image {
-            width: 50px; /* Adjust the width as needed */
-            height: 50px; /* Adjust the height as needed */
+            width: 60px; /* Adjust the width as needed (10% of the screen width) */
+            height: 60px; /* Adjust the height as needed */
         }
 
         .sidebar-icon-container {
@@ -70,7 +70,7 @@ c<!DOCTYPE html>
             transition: 0.5s;
             padding-top: 60px; /* Space for the sidebar icon */
             z-index: 1;
-            background-image: url(sidebar.jpg);
+            background-image: url(sidebar.png);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -84,15 +84,15 @@ c<!DOCTYPE html>
         .sidebar a {
             font-size: 40px;
             font-family: 'Lexend Zetta', sans-serif;
-            color: #333332; /* White text color */
-            margin: 30px;
+            color: #1c1c1c; /* White text color */
+            margin: 20px;
             align-items: center;
             margin-top: 75px;
-            margin-left: 20px;
+            margin-left: 10px;
             margin-right: 20px;
-            padding: 20px;
+            padding: 10px;
             text-transform: uppercase;
-            line-height: 3;
+            line-height: 4;
             display: inline-block;
             border: none;
             font-weight: bold;
@@ -101,10 +101,24 @@ c<!DOCTYPE html>
             cursor: pointer;
         }
 
+        .sidebar a:hover{
+            filter: opacity(0.5);
+        }
+
     </style>
 
 </head>
 <body>  
+
+    <div class="mid-buttons">
+        <a href="steam.html" class="icon-button"><img src="../icons/steam-icon.gif" alt="Steam" class="icon-image"></a>
+        <a href="twitter.html" class="icon-button"><img src="../icons/twitter-icon.gif" alt="Twitter" class="icon-image"></a>
+        <a href="instagram.html" class="icon-button"><img src="../icons/instagram-icon.gif" alt="Instagram" class="icon-image"></a>
+        <a href="discord.html" class="icon-button"><img src="../icons/discord-icon.gif" alt="Discord" class="icon-image"></a>
+        <a href="linkedin.html" class="icon-button"><img src="../icons/linkedin-icon.gif" alt="LinkedIn" class="icon-image"></a>
+        <a href="git.html" class="icon-button"><img src="../icons/git-icon.gif" alt="LinkedIn" class="icon-image"></a>
+    </div>  
+
     <div class="sidebar-icon-container">
         <a class="icon-button" onmouseenter="toggleSidebar()">
           <img src="../icons/sidebar.gif" alt="More" class="icon-image">
@@ -119,14 +133,7 @@ c<!DOCTYPE html>
         <a href="contact.html">Contact</a>
     </div>
 
-    <div class="mid-buttons">
-        <a href="steam.html" class="icon-button"><img src="../icons/steam-icon.gif" alt="Steam" class="icon-image"></a>
-        <a href="twitter.html" class="icon-button"><img src="../icons/twitter-icon.gif" alt="Twitter" class="icon-image"></a>
-        <a href="instagram.html" class="icon-button"><img src="../icons/instagram-icon.gif" alt="Instagram" class="icon-image"></a>
-        <a href="discord.html" class="icon-button"><img src="../icons/discord-icon.gif" alt="Discord" class="icon-image"></a>
-        <a href="linkedin.html" class="icon-button"><img src="../icons/linkedin-icon.gif" alt="LinkedIn" class="icon-image"></a>
-        <a href="git.html" class="icon-button"><img src="../icons/git-icon.gif" alt="LinkedIn" class="icon-image"></a>
-    </div>   
+ 
 </body>
 </html>
         
