@@ -1,0 +1,77 @@
+c<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
+    <title>Twitter</title>
+    <style>
+        body {
+            background-image: url('../dylan.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .centered-button {
+            display: inline-block;
+            background: transparent;
+            border: none;
+            color: #ffffff; /* Default text color */
+            font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
+            font-size: 50px; /* Add your desired font size */
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth text color transition on hover */
+            cursor: pointer;
+        }
+
+        .centered-button:hover {
+            color: #333332; /* Text color on hover */
+        }
+
+        .centered-image {
+            width: 100px;
+            height: 100px;
+        }
+
+        .centered-container {
+            display: flex;
+            flex-direction: column; /* Stack image and button vertically */
+            align-items: center; /* Center horizontally */
+        }
+        
+        </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var button = document.querySelector(".centered-button");
+
+        button.addEventListener("click", function () {
+            button.classList.add("clicked");
+
+                    // Your JavaScript code here
+        function openInNewTab(url) {
+            window.open(url, '_blank');
+        }
+
+            setTimeout(function () {
+                var linkUrl = 'https://twitter.com/dyldickinson4';
+                openInNewTab(linkUrl);
+            }, 0);       
+        });
+    });
+</script>
+    
+</head>
+<body>
+    <div class="centered-container">
+        <a> <img src="../profiles/twitter.png" class="centered-image" alt="Twitter pfp."> </a>
+        <button class="centered-button">@dyldickinson4</button>
+    </div>
+</body>
+</html>
