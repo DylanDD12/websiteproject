@@ -7,6 +7,27 @@ body{
     margin: 0;
 }
 
+.index-container {
+    display: flex;
+    align-items: flex;
+    justify-content: center;
+    margin: 25px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.index-text {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    color: #ffffff; /* Default text color */
+    font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
+    font-size: 2.5vw; /* Add your desired font size */
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .wrong-container {
     display: flex;
     flex-direction: column;

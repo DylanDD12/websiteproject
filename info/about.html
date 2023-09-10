@@ -6,14 +6,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="pagestyle.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+
     <title>About</title>
 </head>
 
 <body>  
     <div class="wrong-container">
         <script src="sidebarscript.js"></script>
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <div class="index-container">
+            <a class = "index-text">About</a>
+        </div>
 
         <div class="right-buttons">
             <a href="steam.html" class="icon-button"><img src="../icons/steam-icon.gif" alt="Steam" class="icon-image"></a>
@@ -37,7 +42,41 @@
             <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
         </div>
-    </div>
+    </div>  
+    
+    <script src="about.js"></script>
+    <div class="tab-container">
+        <div class="tab">
+          <button class="tab-button" onclick="openTab(event, 'tab1')">Background</button>
+        </div>
+        <div class="tab">
+          <button class="tab-button" onclick="openTab(event, 'tab2')">Education</button>
+        </div>
+        <div class="tab">
+            <button class="tab-button" onclick="openTab(event, 'tab3')">Interests</button>
+        </div>
+        <div class="tab">
+            <button class="tab-button" onclick="openTab(event, 'tab4')">Projects</button>
+        </div>
+        <!-- Add more tabs as needed -->
+      </div>
+      
+      <div id="tab1" class="tab-content">
+        <a class = "text-box">Content for Tab 1 goes here.</a>
+      </div>
+      
+      <div id="tab2" class="tab-content">
+        <a class = "text-box">Content for Tab 2 goes here.</a>
+      </div>
+
+      <div id="tab3" class="tab-content">
+        <a class = "text-box">Content for Tab 3 goes here.</a>
+      </div>
+
+      <div id="tab4" class="tab-content">
+        <a class = "text-box">Content for Tab 4 goes here.</a>
+      </div>
+
 </body>
 </html>
         
