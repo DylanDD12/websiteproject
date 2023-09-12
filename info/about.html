@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" href="pagestyle.css">
     <link rel="stylesheet" type="text/css" href="about.css">
 
@@ -44,16 +44,16 @@
         </div>
     </div>  
     
-    <script src="about.js"></script>
+
     <div class="tab-container">
         <div class="tab">
-          <button class="tab-button" onclick="openTab(event, 'tab1')">Background</button>
+          <button class="tab-button active" onclick="openTab(event, 'tab1')">Background</button>
         </div>
         <div class="tab">
           <button class="tab-button" onclick="openTab(event, 'tab2')">Education</button>
         </div>
         <div class="tab">
-            <button class="tab-button" onclick="openTab(event, 'tab3')">Interests</button>
+            <button class="tab-button" onclick="openTab(event, 'tab3')">Specs</button>
         </div>
         <div class="tab">
             <button class="tab-button" onclick="openTab(event, 'tab4')">Projects</button>
@@ -66,16 +66,23 @@
       </div>
       
       <div id="tab2" class="tab-content">
-        <a class = "text-box">Content for Tab 2 goes here.</a>
+        <h1><u>A-Levels</u></h0>
+        <h2>Silverdale School - Sheffield</h2>
+        <a class = "text-box">Chemistry: A*<br>Physics: A*<br>Mathematics: A*<br>Further Mathematics: A*</a>
+        <h1><u>Undergraduate</u></h1>
+        <h2>The University of Leeds</h2>
+        <a class = "text-box">Computer Science with Artificial Intelligence - (MEng)</a>
       </div>
 
       <div id="tab3" class="tab-content">
-        <a class = "text-box">Content for Tab 3 goes here.</a>
+        <a class = "text-box"><strong>Power Supply:</strong><br>Corsair SF600 Platinum Fully Modular PSU<br><br><strong>GPU:</strong><br>GIGABYTE - GeForce RTX 3060 Ti 8 GB GAMING<br><br><strong>CPU:</strong><br>AMD Ryzen 7 5800X Processor<br><br><strong>Motherboard:</strong><br>B550I AORUS PRO AX<br><br><strong>RAM:</strong><br>Corsair VENGEANCE DDR4 16GB 3000Mhz<br><br><strong>SSD:</strong><br>-Samsung 970 EVO Plus M.2<br>-Crucial P3 1TB M.2<br><br><strong>Case:</strong><br>Dan Cases A4-SFX V4.1 Mini-ITX Gaming Case</a>
       </div>
 
       <div id="tab4" class="tab-content">
-        <a class = "text-box">Content for Tab 4 goes here.</a>
+        <a class = "text-box"><u><a href="https://hobobean.co.uk">Hobobean.co.uk</a></u><br><br>Made by me with JavaScript, HTML, CSS and Adobe Photoshop. Hosted on github pages.</a>
       </div>
+
+      <script src="about.js"></script>
 
 </body>
 </html>

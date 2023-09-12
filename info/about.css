@@ -40,18 +40,26 @@
     margin-right: 2%;
     padding-right: 25%;
     padding-left: 25%;
-    padding-bottom: 12.5%;
-    padding-top: 7.5%;
-    color: #ffffff;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    color: #e3e3e3;
     background-image: url(tabback.jpg);
     font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
     font-size: 1.25vw; /* Add your desired font size */
     border: 2px solid #ffffff;
     border-radius: 2px;
-
   }
 
   .text-box {
     flex: 1;
     text-align: center; /* Center the text inside the tabs */
+    
   }
+
+  /* CSS */
+.tab-button.active {
+  color: #3b3b3b;
+  text-decoration: underline;
+}
+
+a { color:#e3e3e3 }
