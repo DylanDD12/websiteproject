@@ -150,13 +150,13 @@ body{
     }
 
     .sidebar a {
-        font-size: 20%;
+        font-size: 100%;
         font-family: 'Lexend Zetta', sans-serif;
         color: #1c1c1c; /* White text color */
-        margin: 0.1%;
+        margin: 1%;
         align-items: center;
         margin-top: 7.7%;
-        margin-right: 2%;
+        margin-right: 20%;
         text-transform: uppercase;
         display: inline-block;
         border: none;
@@ -165,4 +165,9 @@ body{
         transition: color 0.3s ease; /* Smooth text color transition on hover */
         cursor: pointer;
     }
+
+    .sidebar.active {
+        width: 100%; /* Adjust the width of the sidebar */
+    }
+    
   }
