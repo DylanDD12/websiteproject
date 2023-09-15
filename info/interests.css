@@ -1,0 +1,112 @@
+  .tab-container {
+    display: flex;
+    justify-content: space-between; /* Center and space evenly horizontally */
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    background-image: url(sidebar2.png );
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+
+  }
+  
+  .tab {
+    flex: 1;
+    text-align: center; /* Center the text inside the tabs */
+  }
+  
+  .tab-button {
+    background-color: transparent;
+    font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
+    font-size: 1.5vw; /* Add your desired font size */
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 1% 2%;
+    margin: 2%;
+    transition: color 0.3s ease; /* Smooth text color transition on hover */
+    cursor: pointer;
+  }
+  
+  .tab-button:hover {
+    opacity: 50%;
+  }
+  
+  .tab-content {
+    display: none;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    color: #e3e3e3;
+    background-image: url(tabback.jpg);
+    font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
+    font-size: 1.25vw; /* Add your desired font size */
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+  }
+
+  .text-box {
+    flex: 1;
+    text-align: center; /* Center the text inside the tabs */
+    
+  }
+
+  /* CSS */
+.tab-button.active {
+  color: #3b3b3b;
+  text-decoration: underline;
+}
+
+a { color:#e3e3e3 }
+
+@media (max-width: 768px) {
+  .tab-container {
+    display: flex;
+    justify-content: space-between; /* Center and space evenly horizontally */
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    background-image: url(sidebar2.png );
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+
+  }
+    
+  .tab-content {
+    display: none;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    color: #e3e3e3;
+    background-image: url(tabback.jpg);
+    font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
+    font-size: 60%; /* Add your desired font size */
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+  }
+
+  .tab-button {
+    background-color: transparent;
+    font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
+    font-size: 60%; /* Add your desired font size */
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 1% 2%;
+    margin: 2%;
+    transition: color 0.3s ease; /* Smooth text color transition on hover */
+    cursor: pointer;
+  }
+
+
+}
