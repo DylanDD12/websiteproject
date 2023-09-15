@@ -130,3 +130,39 @@ body{
 .sidebar a:hover{
     filter: opacity(0.5);
 }
+
+@media (max-width: 768px) {
+    .icon-image {
+        width: 10px; /* Adjust the width as needed (10% of the screen width) */
+        height: 10px; /* Adjust the height as needed */
+    }
+
+    .icon-sidebar {
+        background: transparent;
+        margin: 1%;
+        border: none;
+        color: #333333; /* Default text color */
+        font-family: 'Lexend Zetta', sans-serif; /* Add your desired font-family */
+        font-size: 1%; /* Add your desired font size */
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .sidebar a {
+        font-size: 20%;
+        font-family: 'Lexend Zetta', sans-serif;
+        color: #1c1c1c; /* White text color */
+        margin: 0.1%;
+        align-items: center;
+        margin-top: 7.7%;
+        margin-right: 2%;
+        text-transform: uppercase;
+        display: inline-block;
+        border: none;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease; /* Smooth text color transition on hover */
+        cursor: pointer;
+    }
+  }
