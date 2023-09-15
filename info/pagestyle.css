@@ -169,5 +169,23 @@ body{
     .sidebar.active {
         width: 100%; /* Adjust the width of the sidebar */
     }
+
+    .sidebar {
+        width: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        white-space: pre;
+        transition: 0.5s;
+        padding-top: 0%; /* Space for the sidebar icon */
+        z-index: 1;
+        background-image: url(sidebar2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+    }
     
   }
